@@ -18,14 +18,18 @@
   /* Text */
   --text:          #ededf0;
   --text-2:        #a1a1aa;
-  --text-3:        #6b6b74;
+  --text-3:        #8b8b96;  /* tertiary labels — AA-safe on bg (5.9:1) */
 
-  /* Accent — crimson red */
+  /* Accent — crimson red.
+     Two roles: bright red for TEXT/glow on dark (passes on black),
+     deeper "action red" for BUTTON FILLS behind white text (passes 4.5:1). */
   --red:           #ff3040;
   --red-bright:    #ff5560;
   --red-deep:      #c81a28;
   --red-glow:      rgba(255, 48, 64, 0.5);
   --red-soft:      rgba(255, 48, 64, 0.12);
+  --red-btn-a:     #e01f2e;  /* button gradient top — white on it = 4.8:1 */
+  --red-btn-b:     #c81a28;  /* button gradient bottom — white on it = 5.8:1 */
 
   /* Layout */
   --maxw:          1120px;
@@ -46,7 +50,11 @@
 /* ---------- Reset ---------- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 84px; /* keep section headers clear of the fixed nav on anchor jumps */
+  -webkit-text-size-adjust: 100%;
+}
 
 body {
   font-family: var(--font-body);
@@ -116,10 +124,10 @@ em { font-style: italic; color: var(--text); }
 .btn:hover { transform: translateY(-2px); }
 
 .btn--primary {
-  background: linear-gradient(180deg, var(--red-bright), var(--red));
+  background: linear-gradient(180deg, var(--red-btn-a), var(--red-btn-b));
   border-color: transparent;
   color: #fff;
-  box-shadow: 0 6px 22px -8px var(--red-glow), inset 0 1px 0 rgba(255,255,255,0.25);
+  box-shadow: 0 6px 22px -8px var(--red-glow), inset 0 1px 0 rgba(255,255,255,0.22);
 }
 .btn--primary:hover { box-shadow: 0 12px 32px -8px var(--red-glow), inset 0 1px 0 rgba(255,255,255,0.3); }
 .btn--primary:hover svg { transform: translateX(3px); }
