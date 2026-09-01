@@ -4,46 +4,34 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Usaid Siddiqui — Software Engineer & ML Researcher</title>
-  <meta name="description" content="Usaid Siddiqui — Computer Science & Electrical Engineering student building ML research, robotics, and secure full-stack systems." />
-  <meta name="theme-color" content="#0a0a0b" />
-
-  <!-- Open Graph -->
+  <meta name="description" content="Usaid Siddiqui — Computer Science & Electrical Engineering student working across ML research, robotics, and secure full-stack engineering." />
+  <meta name="theme-color" content="#161212" />
   <meta property="og:title" content="Usaid Siddiqui — Software Engineer & ML Researcher" />
   <meta property="og:description" content="ML research, robotics, and secure full-stack engineering." />
   <meta property="og:type" content="website" />
 
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230a0a0b'/%3E%3Ctext x='50' y='68' font-family='Space Grotesk, sans-serif' font-size='54' font-weight='700' fill='%23ff3040' text-anchor='middle'%3EU%3C/text%3E%3C/svg%3E" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23161212'/%3E%3Crect x='14' y='14' width='72' height='72' fill='none' stroke='%23df5050' stroke-width='6'/%3E%3Ctext x='50' y='70' font-family='Georgia, serif' font-size='52' font-weight='700' fill='%23eeeeee' text-anchor='middle'%3EU%3C/text%3E%3C/svg%3E" />
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <!-- Background layers -->
-  <div class="bg-grid" aria-hidden="true"></div>
-  <div class="bg-glow" aria-hidden="true"></div>
-  <div class="bg-noise" aria-hidden="true"></div>
-
   <!-- Navigation -->
   <header class="nav" id="nav">
-    <div class="nav__inner">
-      <a href="#top" class="nav__logo" aria-label="Home">
-        <span class="nav__logo-mark">U</span>
-        <span class="nav__logo-text">Usaid Siddiqui</span>
+    <div class="container nav__inner">
+      <a href="#top" class="nav__brand" aria-label="Home">
+        <span class="nav__mark" aria-hidden="true"></span>
+        <span class="nav__name">Usaid Siddiqui</span>
       </a>
       <nav class="nav__links" aria-label="Primary">
-        <a href="#work">Work</a>
         <a href="#about">About</a>
+        <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
+        <a href="assets/Usaid-Siddiqui-Resume.pdf" target="_blank" rel="noopener" class="nav__resume">Résumé ↗</a>
       </nav>
-      <a href="assets/Usaid-Siddiqui-Resume.pdf" target="_blank" rel="noopener" class="btn btn--sm">
-        Résumé
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>
-      </a>
       <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span>
       </button>
@@ -51,255 +39,159 @@
   </header>
 
   <main id="top">
-    <!-- Hero -->
-    <section class="hero" id="hero">
-      <div class="hero__spotlight" id="spotlight" aria-hidden="true"></div>
-      <div class="container">
-        <div class="hero__status reveal">
-          <span class="hero__status-dot"></span>
-          Available for internships &amp; research
+    <!-- About / Contact — key info first -->
+    <section class="intro" id="about">
+      <div class="container intro__grid">
+        <div class="intro__lead reveal">
+          <p class="eyebrow">Software Engineer · ML Researcher</p>
+          <h1 class="intro__name">Usaid Siddiqui</h1>
+          <p class="intro__about">
+            Computer Science &amp; Electrical Engineering student at the University of Alabama,
+            working across <span class="hl">machine learning research</span>,
+            <span class="hl">robotics</span>, and <span class="hl">secure full-stack engineering</span>.
+            I like problems where careful, unglamorous engineering makes something unpredictable safe
+            and useful.
+          </p>
+
+          <dl class="skills">
+            <div class="skills__row">
+              <dt>Languages</dt>
+              <dd>Python · C++ · C · JavaScript · PHP · SQL · VHDL</dd>
+            </div>
+            <div class="skills__row">
+              <dt>ML &amp; Robotics</dt>
+              <dd>PyTorch · TensorFlow · ROS 2 · Webots · SLAM · DDP</dd>
+            </div>
+            <div class="skills__row">
+              <dt>Web &amp; Tools</dt>
+              <dd>WordPress · REST APIs · MySQL · Git · AWS · KiCAD</dd>
+            </div>
+          </dl>
         </div>
-        <h1 class="hero__title reveal">
-          <span class="line">Building systems where</span>
-          <span class="line">careful engineering makes</span>
-          <span class="line">the <span class="accent">unpredictable</span> safe.</span>
-        </h1>
-        <p class="hero__sub reveal">
-          I'm Usaid — a Computer Science &amp; Electrical Engineering student at the University of Alabama
-          working across <strong>machine learning research</strong>, <strong>robotics</strong>, and
-          <strong>secure full-stack engineering</strong>.
-        </p>
-        <div class="hero__actions reveal">
-          <a href="#work" class="btn btn--primary">
-            View my work
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
-          <a href="#contact" class="btn btn--ghost">Get in touch</a>
-        </div>
-        <div class="hero__meta reveal">
-          <div class="hero__meta-item"><span class="hero__meta-num">4.00</span><span class="hero__meta-label">GPA · CS &amp; EE</span></div>
-          <div class="hero__meta-divider"></div>
-          <div class="hero__meta-item"><span class="hero__meta-num">3</span><span class="hero__meta-label">Research labs</span></div>
-          <div class="hero__meta-divider"></div>
-          <div class="hero__meta-item"><span class="hero__meta-num">4+</span><span class="hero__meta-label">Shipped projects</span></div>
-        </div>
+
+        <aside class="intro__aside reveal">
+          <div class="card">
+            <h2 class="card__title">Contact</h2>
+            <ul class="linklist">
+              <li><span class="linklist__k">Email</span><a href="mailto:usaidsidiqui@gmail.com">usaidsidiqui@gmail.com</a></li>
+              <li><span class="linklist__k">GitHub</span><a href="https://github.com/Usaid-Siddiqui" target="_blank" rel="noopener">Usaid-Siddiqui ↗</a></li>
+              <li><span class="linklist__k">LinkedIn</span><a href="https://linkedin.com/in/usaidsiddiqui1" target="_blank" rel="noopener">usaidsiddiqui1 ↗</a></li>
+              <li><span class="linklist__k">Résumé</span><a href="assets/Usaid-Siddiqui-Resume.pdf" target="_blank" rel="noopener">Download PDF ↗</a></li>
+            </ul>
+            <p class="available"><span class="available__mark" aria-hidden="true"></span>Available for internships &amp; research</p>
+          </div>
+
+          <div class="card">
+            <h2 class="card__title">Education</h2>
+            <p class="edu__school">The University of Alabama</p>
+            <p class="edu__degree">B.S. Computer Science &amp; Electrical Engineering</p>
+            <p class="edu__meta">Minor in Mathematics &amp; Robotics · Expected May 2028</p>
+            <p class="edu__honors">4.00 GPA · National Merit Scholar · Honors College · President's List</p>
+          </div>
+        </aside>
       </div>
-      <a href="#work" class="hero__scroll reveal" aria-label="Scroll to work">
-        <span></span>
-      </a>
     </section>
 
-    <!-- Work -->
-    <section class="section" id="work">
+    <!-- Projects -->
+    <section class="section" id="projects">
       <div class="container">
         <div class="section__head reveal">
-          <span class="section__eyebrow"><span class="section__eyebrow-num">01</span> Selected Work</span>
-          <h2 class="section__title">Things I've designed, built, and debugged.</h2>
-          <p class="section__lead">
-            From a secure applicant-tracking system in production to research that establishes a
-            rigorous negative result — a spread across full-stack, robotics, and ML.
-          </p>
+          <h2 class="section__title">Projects</h2>
+          <span class="section__count">Selected work</span>
         </div>
 
-        <div class="projects">
-          <!-- Project 1: ACRE -->
-          <article class="project reveal" data-tilt>
-            <div class="project__glow" aria-hidden="true"></div>
-            <div class="project__body">
-              <div class="project__top">
-                <span class="project__index">01</span>
-                <div class="project__tags">
-                  <span class="tag">PHP</span>
-                  <span class="tag">WordPress</span>
-                  <span class="tag">Security</span>
-                  <span class="tag">MySQL</span>
-                </div>
-              </div>
-              <h3 class="project__title">ACRE Student &amp; Employer Portal</h3>
-              <p class="project__kicker">Full-Stack · Applicant-Tracking System · <span class="muted">Sole developer</span></p>
-              <p class="project__desc">
-                A secure, self-contained WordPress plugin for the Alabama Center for Real Estate: two
-                public intake forms (students + employers) feeding two private staff dashboards to
-                review, filter, and track every submission — built entirely on free, open-source tools.
-              </p>
-              <ul class="project__points">
-                <li>Capability-based access control with <strong>private, non-guessable résumé storage</strong> for student PII</li>
-                <li>No-code admin layer lets non-technical staff <strong>reshape forms without a developer</strong></li>
-                <li>Native <code>WP_List_Table</code> dashboards with AJAX inline editing, filters &amp; CSV export</li>
-                <li>Delivered on free tooling — a <strong>$30k–$50k</strong> comparable market build</li>
-              </ul>
-              <div class="project__foot">
-                <span class="project__status"><span class="dot dot--live"></span> Delivered · v0.3.3 · in deployment</span>
-              </div>
+        <ol class="worklist">
+          <li class="work reveal">
+            <div class="work__meta">
+              <span class="work__index">01</span>
+              <p class="work__type">Full-Stack · WordPress</p>
+              <p class="work__stack">PHP · WordPress · ACF · MySQL</p>
+              <p class="work__note">Sole developer · Delivered v0.3.3</p>
             </div>
-          </article>
-
-          <!-- Project 2: LLM Robotics -->
-          <article class="project reveal" data-tilt>
-            <div class="project__glow" aria-hidden="true"></div>
-            <div class="project__body">
-              <div class="project__top">
-                <span class="project__index">02</span>
-                <div class="project__tags">
-                  <span class="tag">ROS 2</span>
-                  <span class="tag">Python</span>
-                  <span class="tag">Webots</span>
-                  <span class="tag">Claude API</span>
-                </div>
-              </div>
-              <h3 class="project__title">LLM-Driven Robotics Controller</h3>
-              <p class="project__kicker">Robotics · AI · <span class="muted">TurtleBot3 + Webots</span></p>
-              <p class="project__desc">
-                An LLM-in-the-loop controller with a three-layer "brain vs. reflexes" architecture:
-                Claude chooses high-level motion primitives while a fast 10&nbsp;Hz classical layer
-                executes them and guarantees the robot never moves unsafely.
+            <div class="work__body">
+              <h3 class="work__title">ACRE Student &amp; Employer Portal</h3>
+              <p class="work__desc">
+                A secure WordPress plugin for the Alabama Center for Real Estate: two public intake
+                forms — students and employers — feeding two private staff dashboards to review,
+                filter, and track every submission. Built end-to-end on free, open-source tools.
               </p>
-              <ul class="project__points">
-                <li>Timescale-separated <strong>cognitive / executive / reactive</strong> layers over a typed interface</li>
-                <li>Hard obstacle veto that's <strong>independent of the LLM being correct</strong></li>
-                <li>Structured tool-use output, prompt caching, and fail-safe-by-construction shutdown</li>
-                <li>Built &amp; validated end-to-end on <strong>ROS 2 Humble</strong></li>
+              <ul class="work__points">
+                <li>Capability-based access control and private résumé storage served outside the web root, protecting student PII.</li>
+                <li>An admin "no-code" layer lets non-technical staff add fields and reshape forms without a developer.</li>
+                <li>Native <code>WP_List_Table</code> dashboards with AJAX inline editing, filtering, and CSV export.</li>
               </ul>
-              <div class="project__foot">
-                <span class="project__status"><span class="dot dot--live"></span> Pipeline validated · tuning</span>
-              </div>
             </div>
-          </article>
+          </li>
 
-          <!-- Project 3: LorentzParT-JEPA -->
-          <article class="project reveal" data-tilt>
-            <div class="project__glow" aria-hidden="true"></div>
-            <div class="project__body">
-              <div class="project__top">
-                <span class="project__index">03</span>
-                <div class="project__tags">
-                  <span class="tag">PyTorch</span>
-                  <span class="tag">DDP</span>
-                  <span class="tag">Physics</span>
-                  <span class="tag">Research</span>
-                </div>
-              </div>
-              <h3 class="project__title">Self-Supervised Pretraining for Jet Physics</h3>
-              <p class="project__kicker">ML Research · ML4Sci / GSoC 2026 · <span class="muted">LorentzParT-JEPA</span></p>
-              <p class="project__desc">
+          <li class="work reveal">
+            <div class="work__meta">
+              <span class="work__index">02</span>
+              <p class="work__type">Robotics · AI</p>
+              <p class="work__stack">ROS 2 · Python · Webots · Claude API</p>
+              <p class="work__note">Pipeline validated</p>
+            </div>
+            <div class="work__body">
+              <h3 class="work__title">LLM-Driven Robotics Controller</h3>
+              <p class="work__desc">
+                An LLM-in-the-loop controller for a simulated TurtleBot3. Claude chooses high-level
+                motion primitives while a fast 10&nbsp;Hz classical layer executes them and vetoes
+                unsafe motion — a "brain vs. reflexes" design where safety never depends on the model
+                being correct.
+              </p>
+              <ul class="work__points">
+                <li>Three-layer hierarchy — cognitive, executive, reactive — separated by timescale over a narrow typed interface.</li>
+                <li>Structured tool-use output, prompt caching, and fail-safe-by-construction error handling.</li>
+                <li>Built and validated end-to-end on ROS 2 Humble.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="work reveal">
+            <div class="work__meta">
+              <span class="work__index">03</span>
+              <p class="work__type">ML Research · ML4Sci / GSoC 2026</p>
+              <p class="work__stack">PyTorch · DDP · JetClass</p>
+              <p class="work__note"><a href="https://github.com/Usaid-Siddiqui/LorentzParT-JEPA" target="_blank" rel="noopener" class="work__link">GitHub ↗</a></p>
+            </div>
+            <div class="work__body">
+              <h3 class="work__title">Self-Supervised Pretraining for Jet Physics</h3>
+              <p class="work__desc">
                 A full self-supervised stack (JEPA + MAE) on a hybrid Lorentz-equivariant Particle
                 Transformer, testing whether pretraining improves jet tagging on JetClass. The
-                hard-won answer — no accuracy gain — is proven, not just observed.
+                rigorously-established result: no classification-accuracy gain in this regime —
+                proven, not merely observed.
               </p>
-              <ul class="project__points">
-                <li>Found a statistics-corrupting padding bug (present in a peer repo): <strong>2× faster, +0.15 AUC</strong></li>
-                <li>A <strong>double-dissociation experiment</strong> proving the ceiling is input-limited, not representation-limited</li>
-                <li>Information-theoretic bound turning "SSL doesn't help" into "SSL <em>cannot</em> help, here's why"</li>
-                <li>Distributed (DDP) training with a resumable multi-phase experiment pipeline</li>
+              <ul class="work__points">
+                <li>Found a statistics-corrupting padding bug — also present in a peer reference implementation — worth ~2× speed and +0.15 AUC once fixed.</li>
+                <li>A double-dissociation experiment showing the accuracy ceiling is input-limited, not representation-limited.</li>
+                <li>Distributed (DDP) training with a resumable, multi-phase experiment pipeline.</li>
               </ul>
-              <div class="project__foot">
-                <a href="https://github.com/Usaid-Siddiqui/LorentzParT-JEPA" target="_blank" rel="noopener" class="project__link">
-                  View on GitHub
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>
-                </a>
-              </div>
             </div>
-          </article>
+          </li>
 
-          <!-- Project 4: Chess World Model -->
-          <article class="project reveal" data-tilt>
-            <div class="project__glow" aria-hidden="true"></div>
-            <div class="project__body">
-              <div class="project__top">
-                <span class="project__index">04</span>
-                <div class="project__tags">
-                  <span class="tag">PyTorch</span>
-                  <span class="tag">Transformers</span>
-                  <span class="tag">JEPA</span>
-                  <span class="tag">Research</span>
-                </div>
-              </div>
-              <h3 class="project__title">Chess World Model</h3>
-              <p class="project__kicker">ML Research · Latent World Models · <span class="muted">CWM</span></p>
-              <p class="project__desc">
+          <li class="work reveal">
+            <div class="work__meta">
+              <span class="work__index">04</span>
+              <p class="work__type">ML Research</p>
+              <p class="work__stack">PyTorch · Transformers · JEPA</p>
+              <p class="work__note"><a href="https://github.com/Usaid-Siddiqui/Chess-World-Model" target="_blank" rel="noopener" class="work__link">GitHub ↗</a></p>
+            </div>
+            <div class="work__body">
+              <h3 class="work__title">Chess World Model</h3>
+              <p class="work__desc">
                 A JEPA-based world model that learns an internal board representation from move
                 sequences alone — never seeing the board — then predicts future states in latent
-                space. Uniquely verifiable: the true board at every ply is known.
+                space. Uniquely verifiable, since the true board at every ply is known and can be
+                decoded from the model's latent.
               </p>
-              <ul class="project__points">
-                <li>Action-conditioned latent dynamics (MuZero / EfficientZero-inspired) with an EMA teacher</li>
-                <li>Chess-GPT autoregressive baseline <strong>sharing the transformer backbone</strong></li>
-                <li>Streaming Lichess data pipeline over sharded datasets</li>
-                <li>Phase&nbsp;1 complete — <strong>clears the no-information baseline by a wide margin</strong></li>
+              <ul class="work__points">
+                <li>Action-conditioned latent dynamics (MuZero / EfficientZero-inspired) with an EMA teacher.</li>
+                <li>A Chess-GPT autoregressive baseline sharing the transformer backbone.</li>
+                <li>Phase&nbsp;1 complete — clears the no-information baseline by a wide margin.</li>
               </ul>
-              <div class="project__foot">
-                <a href="https://github.com/Usaid-Siddiqui/Chess-World-Model" target="_blank" rel="noopener" class="project__link">
-                  View on GitHub
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>
-                </a>
-              </div>
             </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section class="section section--about" id="about">
-      <div class="container">
-        <div class="about">
-          <div class="about__intro reveal">
-            <span class="section__eyebrow"><span class="section__eyebrow-num">02</span> About</span>
-            <h2 class="section__title">A builder across the ML, robotics, and systems stack.</h2>
-            <p class="about__text">
-              I like problems where deliberately old, boring engineering makes something
-              unpredictable safe and useful — an LLM driving a robot without ever touching the
-              motors, or a secure intake system a non-technical team can run entirely themselves.
-            </p>
-            <p class="about__text">
-              I care about <strong>intellectual honesty</strong> as much as shipping: my proudest
-              research result is a rigorously-established <em>negative</em>, reached only after
-              finding and fixing bugs others had missed. Whether the deliverable is a paper, a plugin,
-              or a control loop, I want it to be correct for a reason I can explain.
-            </p>
-
-            <div class="about__edu">
-              <div class="about__edu-mark">UA</div>
-              <div>
-                <p class="about__edu-school">The University of Alabama</p>
-                <p class="about__edu-degree">B.S. Computer Science &amp; Electrical Engineering · Minor in Math &amp; Robotics · May 2028</p>
-                <p class="about__edu-honors">4.00 GPA · National Merit Scholar · Honors College · President's List</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="about__skills reveal">
-            <div class="skill-group">
-              <h4 class="skill-group__title">Languages</h4>
-              <div class="skill-group__items">
-                <span class="chip">Python</span><span class="chip">C++</span><span class="chip">C</span>
-                <span class="chip">JavaScript</span><span class="chip">PHP</span><span class="chip">SQL</span>
-                <span class="chip">VHDL</span><span class="chip">Assembly</span><span class="chip">Bash</span>
-              </div>
-            </div>
-            <div class="skill-group">
-              <h4 class="skill-group__title">ML &amp; Research</h4>
-              <div class="skill-group__items">
-                <span class="chip">PyTorch</span><span class="chip">TensorFlow</span><span class="chip">Scikit-Learn</span>
-                <span class="chip">DDP</span><span class="chip">NumPy</span><span class="chip">Pandas</span>
-              </div>
-            </div>
-            <div class="skill-group">
-              <h4 class="skill-group__title">Robotics &amp; Embedded</h4>
-              <div class="skill-group__items">
-                <span class="chip">ROS 2</span><span class="chip">Webots</span><span class="chip">SLAM</span>
-                <span class="chip">MPLAB X</span><span class="chip">KiCAD</span><span class="chip">EasyEDA</span>
-              </div>
-            </div>
-            <div class="skill-group">
-              <h4 class="skill-group__title">Web, Data &amp; Cloud</h4>
-              <div class="skill-group__items">
-                <span class="chip">WordPress</span><span class="chip">REST APIs</span><span class="chip">MySQL</span>
-                <span class="chip">Git</span><span class="chip">AWS</span><span class="chip">SolidWorks</span>
-              </div>
-            </div>
-          </div>
-        </div>
+          </li>
+        </ol>
       </div>
     </section>
 
@@ -307,106 +199,69 @@
     <section class="section" id="experience">
       <div class="container">
         <div class="section__head reveal">
-          <span class="section__eyebrow"><span class="section__eyebrow-num">03</span> Experience</span>
-          <h2 class="section__title">Where I've been working.</h2>
+          <h2 class="section__title">Experience</h2>
         </div>
 
-        <div class="timeline">
-          <div class="timeline__item reveal">
-            <div class="timeline__dot"></div>
-            <div class="timeline__meta"><span class="timeline__date">Jul 2026 — Aug 2026</span></div>
-            <div class="timeline__content">
-              <h3 class="timeline__role">Software Engineer Intern</h3>
-              <p class="timeline__org">Alabama Productivity Center · Tuscaloosa, AL</p>
-              <p class="timeline__desc">
+        <ol class="explist">
+          <li class="exp reveal">
+            <span class="exp__date">Jul&nbsp;2026 — Aug&nbsp;2026</span>
+            <div class="exp__body">
+              <h3 class="exp__role">Software Engineer Intern</h3>
+              <p class="exp__org">Alabama Productivity Center · Tuscaloosa, AL</p>
+              <p class="exp__desc">
                 Digitized a manual, spreadsheet-based intake process into a full-stack WordPress/PHP
-                application with an admin dashboard — inline status editing, searchable filtering,
-                internal notes, and CSV export. Hardened student-PII handling with a non-public data
-                model and capability-gated file storage served outside the web root.
+                application with an admin dashboard, and hardened student-PII handling with a
+                non-public data model and capability-gated file storage served outside the web root.
               </p>
             </div>
-          </div>
-
-          <div class="timeline__item reveal">
-            <div class="timeline__dot"></div>
-            <div class="timeline__meta"><span class="timeline__date">Aug 2025 — Present</span></div>
-            <div class="timeline__content">
-              <h3 class="timeline__role">Machine Learning Research Assistant</h3>
-              <p class="timeline__org">Particle Physics Lab · Tuscaloosa, AL</p>
-              <p class="timeline__desc">
-                Designed and trained a self-supervised Vision Transformer for unlabeled particle-physics
-                data, achieving representations that generalize better than supervised baselines in
-                low-data regimes. Implemented mixed-precision training with gradient scaling to maximize
-                utilization on distributed GPU clusters.
+          </li>
+          <li class="exp reveal">
+            <span class="exp__date">Aug&nbsp;2025 — Present</span>
+            <div class="exp__body">
+              <h3 class="exp__role">Machine Learning Research Assistant</h3>
+              <p class="exp__org">Particle Physics Lab · Tuscaloosa, AL</p>
+              <p class="exp__desc">
+                Designed and trained a self-supervised Vision Transformer for unlabeled
+                particle-physics data, using mixed-precision training with gradient scaling to
+                maximize utilization on distributed GPU clusters.
               </p>
             </div>
-          </div>
-
-          <div class="timeline__item reveal">
-            <div class="timeline__dot"></div>
-            <div class="timeline__meta"><span class="timeline__date">Apr 2026 — Present</span></div>
-            <div class="timeline__content">
-              <h3 class="timeline__role">Robotics Research Assistant</h3>
-              <p class="timeline__org">Trustworthy Autonomy Lab · Tuscaloosa, AL</p>
-              <p class="timeline__desc">
-                Developed and deployed a custom TurtleBot3 ROS 2 simulation package integrating Webots,
-                enabling networked-node, SLAM, and localization testing without physical hardware. Built
-                a pipeline translating real-world SLAM output into scaled 3D geometry that recreates the
-                physical lab space.
+          </li>
+          <li class="exp reveal">
+            <span class="exp__date">Apr&nbsp;2026 — Present</span>
+            <div class="exp__body">
+              <h3 class="exp__role">Robotics Research Assistant</h3>
+              <p class="exp__org">Trustworthy Autonomy Lab · Tuscaloosa, AL</p>
+              <p class="exp__desc">
+                Built a custom TurtleBot3 ROS 2 simulation package integrating Webots for
+                networked-node, SLAM, and localization testing without physical hardware, including a
+                pipeline that recreates the physical lab from real SLAM output.
               </p>
             </div>
-          </div>
-
-          <div class="timeline__item reveal">
-            <div class="timeline__dot"></div>
-            <div class="timeline__meta"><span class="timeline__date">Aug 2024 — Dec 2025</span></div>
-            <div class="timeline__content">
-              <h3 class="timeline__role">Avionics Engineer</h3>
-              <p class="timeline__org">Alabama Rocketry Association · Tuscaloosa, AL</p>
-              <p class="timeline__desc">
-                Wrote embedded C++ firmware to sample, timestamp, and log multi-sensor flight data for
-                post-flight analysis. Designed and tested flight PCBs in EasyEDA, then validated the
-                electronics under simulated launch stress for reliable data collection.
+          </li>
+          <li class="exp reveal">
+            <span class="exp__date">Aug&nbsp;2024 — Dec&nbsp;2025</span>
+            <div class="exp__body">
+              <h3 class="exp__role">Avionics Engineer</h3>
+              <p class="exp__org">Alabama Rocketry Association · Tuscaloosa, AL</p>
+              <p class="exp__desc">
+                Wrote embedded C++ firmware to sample, timestamp, and log multi-sensor flight data,
+                and designed and tested flight PCBs in EasyEDA under simulated launch stress.
               </p>
             </div>
-          </div>
-
-          <div class="timeline__item reveal">
-            <div class="timeline__dot"></div>
-            <div class="timeline__meta"><span class="timeline__date">Aug 2025 — Present</span></div>
-            <div class="timeline__content">
-              <h3 class="timeline__role">Math Tutor</h3>
-              <p class="timeline__org">Mathematics Technology Learning Center · Tuscaloosa, AL</p>
-              <p class="timeline__desc">
-                Provide individual and group tutoring in Calculus 1–3 and Linear Algebra, helping 20+
-                students with prerequisite review and exam preparation.
+          </li>
+          <li class="exp reveal">
+            <span class="exp__date">Aug&nbsp;2025 — Present</span>
+            <div class="exp__body">
+              <h3 class="exp__role">Math Tutor</h3>
+              <p class="exp__org">Mathematics Technology Learning Center · Tuscaloosa, AL</p>
+              <p class="exp__desc">
+                Tutor Calculus 1–3 and Linear Algebra for 20+ students, focused on prerequisite
+                review and exam preparation.
               </p>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section class="section section--contact" id="contact">
-      <div class="container">
-        <div class="contact reveal">
-          <span class="section__eyebrow"><span class="section__eyebrow-num">04</span> Contact</span>
-          <h2 class="contact__title">Let's build something<br /><span class="accent">worth explaining.</span></h2>
-          <p class="contact__lead">
-            I'm open to internships, research collaborations, and interesting problems.
-            The fastest way to reach me is email.
-          </p>
-          <a href="mailto:usaidsidiqui@gmail.com" class="btn btn--primary btn--lg">
-            usaidsidiqui@gmail.com
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
-          </a>
-          <div class="contact__socials">
-            <a href="https://github.com/Usaid-Siddiqui" target="_blank" rel="noopener" class="social">GitHub</a>
-            <a href="https://linkedin.com/in/usaidsiddiqui1" target="_blank" rel="noopener" class="social">LinkedIn</a>
-            <a href="assets/Usaid-Siddiqui-Resume.pdf" target="_blank" rel="noopener" class="social">Résumé</a>
-          </div>
-        </div>
+          </li>
+        </ol>
       </div>
     </section>
   </main>
@@ -414,7 +269,8 @@
   <footer class="footer">
     <div class="container footer__inner">
       <span class="footer__name">Usaid Siddiqui</span>
-      <span class="footer__note">Built from scratch · <span id="year"></span></span>
+      <a href="mailto:usaidsidiqui@gmail.com" class="footer__email">usaidsidiqui@gmail.com</a>
+      <span class="footer__year" id="year"></span>
     </div>
   </footer>
 
