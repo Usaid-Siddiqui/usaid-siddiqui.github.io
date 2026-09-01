@@ -155,17 +155,7 @@ code {
 
 /* Aside cards (sharp, bordered — not bubbles) */
 .intro__aside { display: flex; flex-direction: column; gap: 20px; }
-.card { border: 1px solid var(--line); background: var(--surface); padding: 22px 24px; position: relative; overflow: hidden; }
-.card > * { position: relative; z-index: 1; }
-
-/* Education: faint collegiate script-A watermark, top-right */
-.card--edu { padding-right: 30px; }
-.edu__watermark {
-  position: absolute; z-index: 0; top: -22px; right: -6px;
-  font-family: 'Great Vibes', cursive;
-  font-size: 132px; line-height: 1; color: var(--red);
-  opacity: 0.14; pointer-events: none; user-select: none;
-}
+.card { border: 1px solid var(--line); background: var(--surface); padding: 22px 24px; }
 .card__title {
   font-family: var(--sans); font-size: 0.78rem; font-weight: 600;
   letter-spacing: 0.14em; text-transform: uppercase; color: var(--red);
