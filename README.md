@@ -14,7 +14,7 @@ framework, no npm install. Deploys as a static site anywhere.
 index.html          # all content & markup
 css/styles.css      # design system + layout
 js/main.js          # reveals, nav state, pointer effects
-assets/             # résumé PDF
+assets/             # resume PDF
 .nojekyll           # tells GitHub Pages to serve files as-is
 ```
 
